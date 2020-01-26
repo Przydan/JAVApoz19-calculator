@@ -11,6 +11,11 @@ public class App {
         Calculator bean = appCtx.getBean(Calculator.class);
         double result = bean.calculate(OperationType.ADDITION, 2.0, 3.0);
 
+        double result2 = bean.calculate(OperationType.DIVISION, 10.0, 0.0);
+
         System.out.println("Calculation result: " + result);
+        System.out.println("Calculation result: " + result2);
     }
+
+
 }
